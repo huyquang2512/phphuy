@@ -7,13 +7,19 @@
 </head>
 <body>
 <?php
-class php {
+/* 
+Set Name and age
+Get Name and age
+*/
+class getSetName {
   public $name;
   public $age;
 
+  /*Function setname and set age để dùng để truyền giá trị */
   function set_name($name) {
     $this->name = $name;
   }
+   /*Function getname and get age để dùng để nhận giá trị */
   function get_name() {
     return $this->name;
   }
@@ -26,15 +32,19 @@ class php {
 
 }
 
-$huy = new php();
+/* Truyền và lấy*/
+$huy = new getSetName();
 $huy->set_name('Lưu Quang Huy');
 $huy->set_age('13');
-$tien = new php();
+/* truyền và lấy */
+$tien = new getSetName();
 $tien->set_name('Tien');
 $tien->set_age('15');
-$kieu = new php();
+/* truyền và lấy */
+$kieu = new getSetName();
 $kieu->set_name('kieu');
 $kieu->set_age('14');
+/* Truy cập vào $huy để lấy giá trị in ra */
 echo $huy->get_name();
 echo "<br>";
 echo $huy->get_age();
